@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', async(req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'CV.pdf'));
+	res.sendFile(path.join(__dirname, 'public', 'goodcoffee.html'));
 });
 
 app.listen(8000, () => {
